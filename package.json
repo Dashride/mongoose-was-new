@@ -1,0 +1,43 @@
+{
+  "name": "mongoose-was-new",
+  "version": "0.1.0",
+  "description": "Adds wasNew property reflecting the value of isNew for post hooks",
+  "main": "mongoose-was-new.js",
+  "scripts": {
+    "test": "gulp test",
+    "coveralls": "gulp coveralls",
+    "travis": "npm run coveralls -s && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)",
+    "docs": "gulp docs",
+    "prepublish": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dashride/mongoose-was-new.git"
+  },
+  "keywords": [
+    "mongoosejs",
+    "isNew",
+    "post",
+    "pre",
+    "hook"
+  ],
+  "author": "Joseph Thibeault <joe@dashride.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dashride/mongoose-was-new/issues"
+  },
+  "homepage": "https://github.com/Dashride/mongoose-was-new#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "isparta": "^4.0.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.4.5",
+    "mongoose": "^4.4.12"
+  }
+}
