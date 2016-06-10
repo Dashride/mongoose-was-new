@@ -30,7 +30,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
-    "gulp-istanbul": "^0.10.4",
+    "gulp-istanbul": "^1.0.0",
     "gulp-jshint": "^2.0.1",
     "gulp-mocha": "^2.2.0",
     "gulp-util": "^3.0.7",
