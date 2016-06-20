@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha *.spec.js",
     "coveralls": "./node_modules/mocha/bin/mocha --require blanket -R mocha-lcov-reporter *.spec.js | ./node_modules/coveralls/bin/coveralls.js",
-    "travis": "npm run coveralls -s && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)",
+    "travis": "npm run coveralls -s",
     "docs": "gulp docs",
     "prepublish": ""
   },
