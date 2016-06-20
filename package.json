@@ -4,8 +4,8 @@
   "description": "Adds wasNew property reflecting the value of isNew for post hooks",
   "main": "mongoose-was-new.js",
   "scripts": {
-    "test": "gulp test",
-    "coveralls": "gulp coveralls",
+    "test": "./node_modules/mocha/bin/mocha *.spec.js",
+    "coveralls": "./node_modules/mocha/bin/mocha --require blanket -R mocha-lcov-reporter *.spec.js | ./node_modules/coveralls/bin/coveralls.js",
     "travis": "npm run coveralls -s && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)",
     "docs": "gulp docs",
     "prepublish": ""
@@ -28,16 +28,23 @@
   },
   "homepage": "https://github.com/Dashride/mongoose-was-new#readme",
   "devDependencies": {
+    "blanket": "^1.2.3",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "gulp-istanbul": "^0.10.4",
-    "gulp-jshint": "^2.0.0",
+    "gulp-jshint": "^2.0.1",
     "gulp-mocha": "^2.2.0",
     "gulp-util": "^3.0.7",
     "isparta": "^4.0.0",
-    "jshint": "^2.9.1",
+    "jshint": "^2.9.2",
     "jshint-stylish": "^2.1.0",
-    "mocha": "^2.4.5",
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0",
     "mongoose": "^4.4.12"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "mongoose-was-new.js"
+    }
   }
 }
