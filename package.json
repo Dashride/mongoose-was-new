@@ -1,6 +1,6 @@
 {
   "name": "mongoose-was-new",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adds wasNew property reflecting the value of isNew for post hooks",
   "main": "mongoose-was-new.js",
   "scripts": {
