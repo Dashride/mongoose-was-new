@@ -29,7 +29,7 @@
   "homepage": "https://github.com/Dashride/mongoose-was-new#readme",
   "devDependencies": {
     "blanket": "^1.2.3",
-    "chai": "^3.5.0",
+    "chai": "^4.1.1",
     "coveralls": "^2.11.9",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
